@@ -14,7 +14,11 @@ public class App {
     // 0 1 1 2 3(4) 5(5) 8(6) 13(7)
 
     public static long fibonacci(int n,long first, long second){
-        if(n <= 1){
+        if(n == 0){
+            return first;
+        }
+        
+        if(n == 1){
             return second;
         }
         long r = first + second;
